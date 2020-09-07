@@ -1,0 +1,40 @@
+.body{
+    background: #efefee;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* @keyframes duration | timing-function | delay |
+   iteration-count | direction | fill-mode | play-state | name */
+    /* animation: move 2s linear 3 alternate both; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: 2s ease 3s infinite alternate bounce;
+
+}
+.rectangle{
+    width: 100px;
+    height: 100px;
+    background: #000;
+    transition: width  2s,transform 2s;
+
+}
+.rectangle:hover{
+    width: 200px;
+}
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 50px;
+    border-color: transparent transparent red transparent;
+}
+@keyframes move{
+    0%{
+      transform: translate(0,0);
+    }
+    100%{
+      transform: translate(200px,0);
+    }
+  }
+        
